@@ -1,0 +1,79 @@
+/* Cor primária: #FD9D0D
+Cor secundária: #912AF7
+Outras cores utilizadas:
+#5800B0 #55C741 #B0741A */
+
+*{
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+#navHeader{
+    color: white;
+    background-color: #FD9D0D;
+    padding: 4px;
+    border: 4px;
+    vertical-align: middle;
+}
+
+.btn.btn-primary#sejaUmParceiro{
+    background-color: #912AF7;
+    border-color: #912AF7;
+}
+
+.btn.btn-primary#sejaUmVoluntario{
+    background-color: #55C741;
+    border-color: #55C741;
+}
+.nav-link{
+    color:#FD9D0D;
+    font-size: 120%;
+}
+h1.tituloComFundo{
+    background-color: #912AF7;
+    color: white;
+    padding: 15px;
+}
+h2{
+    color: #666;
+    padding: 20px 20px 5px 20px;
+}
+p{
+    padding: 5px 20px 20px 20px;
+}
+.row.cards.sobre-nos{
+    background-color: #912AF7;
+    overflow: auto;
+}
+.card.sobre-nos{
+    background-color: #912AF7;
+    color: white;
+    border: 0;
+    padding: 20px;
+    text-align: center;
+}
+div.container-fluid.carousel{
+    padding: 50px;
+}
+
+#carouselSobreNos{
+    padding: 75px;
+}
+footer{
+    background-color:#FD9D0D;
+}
+
+
+div.copyright{
+    background-color: #FD9D0D;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border: 5px;
+    border-color: white;
+}
+
+@media (max-width: 768px) {
+    footer{
+     text-align: center;
+    }
+ }
