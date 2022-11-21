@@ -1,16 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>FAQ</title>
-</head>
-<body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+  <!--container-wrap para deixar conteúdo com largura máxima (lg)-->
+  <body class="container-lg">
+    <!--navbar do topo (header) com email, telefone e dois botões -->
+    <nav class="navbar navbar-expand-md" id="navHeader">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarCentered"
+          aria-controls="navbarCentered"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-</body>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarCentered"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item pl-4 pr-4">
+              <a
+                class="nav-link active"
+                href="#"
+                style="background-color: #fd9d0d; color: white"
+                >E-mail</a
+              >
+            </li>
+            <li class="nav-item pl-4 pr-4">
+              <a
+                class="nav-link active"
+                href="#"
+                style="background-color: #fd9d0d; color: white"
+                >Telefone</a
+              >
+            </li>
+            <li class="nav-item pl-4 pr-4">
+              <a href="/cadastro.html">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="sejaUmParceiro"
+                >
+                  Seja um parceiro
+                </button>
+              </a>
+            </li>
+            <li class="nav-item pl-4 pr-4">
+              <a href="/cadastro.html">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="sejaUmVoluntario"
+                >
+                  Seja um voluntário
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--navbar do topo (header) com email, telefone e dois botões -->
+
+    <!--navbar com logo e links de navegação -->
+    <nav class="navbar navbar-expand-md" id="navMain">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/img/logo.orange.svg" alt="Logo" height="60px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <b class="fas fa-bars">Menu</b>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
+            <a class="nav-link" href="/projetos-e-vagas.html"
+              >Projetos e Ações</a
+            >
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--navbar com logo e links de navegação -->
+
+    <!--título com fundo roxo -->
+    <h1 class="tituloComFundo">FAQ</h1>
+    <!--título com fundo roxo -->
+
+    <!--conteúdo da página -->
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis
+    incidunt ipsam necessitatibus dolore molestiae fugit rerum, nemo, dolores, a
+    repellendus error! Corporis culpa debitis enim minima accusantium maxime
+    nesciunt. Praesentium obcaecati non iste officia tenetur veniam officiis
+    autem, minima eaque ea libero consectetur quas deserunt eveniet. Magni quas
+    molestias architecto, praesentium sapiente omnis aut suscipit error
+    accusamus, asperiores dolorum vel commodi! Officiis eum laudantium, amet
+    iste quam fugiat expedita sint aspernatur ab aut pariatur ratione cumque,
+    accusantium tenetur voluptates eligendi. Expedita maxime, fuga quibusdam
+    reprehenderit id at praesentium tempore omnis rerum eaque tempora recusandae
+    amet voluptatum. Animi, voluptatum voluptates!
+    <!--conteúdo da página -->
+
+    <!--rodapé responsivo -->
+    <footer>
+      <div class="container p-4">
+        <section class="mb-1">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-sm-4 col-4">
+              <img
+                src="/assets/img/logo-sem-nome-branca.png"
+                width="75px"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.instagram.com">
+                <img
+                  src="/assets/img/icons/icon-ig.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.facebook.com">
+                <img
+                  src="/assets/img/icons/icon-fb.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.whatsapp.com">
+                <img
+                  src="/assets/img/icons/icon-wp.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.github.com">
+                <img
+                  src="/assets/img/icons/icon-gh.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="/index.html" class="text-white">Home</a>
+                </li>
+                <li>
+                  <a href="/cadastro.html" class="text-white"
+                    >Seja um Voluntário</a
+                  >
+                </li>
+                <li>
+                  <a href="/cadastro.html" class="text-white"
+                    >Cadastre sua ONG</a
+                  >
+                </li>
+                <li>
+                  <a href="/projetos-e-vagas.html" class="text-white"
+                    >Pedidos de ajuda</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="/faq.html" class="text-white"
+                    >Perguntas frequentes</a
+                  >
+                </li>
+                <li>
+                  <a href="/sobre-nos.html" class="text-white">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="" class="text-white">Termos de uso</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Política de privacidade</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="copyright">
+        <h5 style="font-family: Pacifico">Projeto Ampare</h5>
+        © Copyright 2022
+      </div>
+    </footer>
+    <!--rodapé responsivo -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
