@@ -1,0 +1,47 @@
+/* Cor primária: #FD9D0D
+Cor secundária: #912AF7
+Outras cores utilizadas:
+#5800B0 #55C741 #B0741A */
+
+/*estilos dos itens da página sobre-nós*/
+.row.cards.sobre-nos {
+  background-color: #912af7;
+  overflow: auto;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card.sobre-nos {
+  background-color: #912af7;
+  color: white;
+  border: 0;
+  padding: 0px;
+  text-align: left;
+}
+
+.sobreNosLogo {
+  padding: 0;
+  text-align: end;
+}
+
+h5.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+div.card-body {
+  padding: 5px;
+}
+
+img.sobre-nos {
+  max-height: 400px;
+}
+
+div.container-fluid.carousel {
+  padding: 25px;
+}
+
+#carouselSobreNos {
+  padding: 25px;
+}
