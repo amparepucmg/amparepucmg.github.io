@@ -4,6 +4,7 @@ Outras cores utilizadas:
 #5800B0 #55C741 #B0741A */
 
 /*estilos dos itens da página sobre-nós*/
+
 .row.cards.sobre-nos {
   background-color: #912af7;
   overflow: auto;
@@ -38,10 +39,6 @@ img.sobre-nos {
   max-height: 400px;
 }
 
-div.container-fluid.carousel {
-  padding: 25px;
-}
-
 #carouselSobreNos {
-  padding: 25px;
+  margin: 25px;
 }

@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sobre-nos.css" />
 
     <title>Sobre Nós</title>
   </head>
@@ -132,114 +133,176 @@
     <!--título com fundo roxo -->
 
     <!--conteúdo da página -->
+
+    <!--descrição e foto do projeto -->
     <div class="row justify-content-center">
-      <div class="col-lg-6 p-4">
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+      <div class="col-lg-6 p-2">
+        <h2>Projeto AMPARE</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-          obcaecati enim veritatis repellat qui officiis autem, rerum est
-          excepturi alias dicta placeat, quos necessitatibus rem tempore iure
-          repudiandae eos at praesentium iste consequatur. Recusandae sint
-          tenetur perferendis iste ex facilis ad numquam accusamus fuga?
-          Blanditiis nostrum obcaecati ab enim libero culpa vel officiis dicta?
-          Dolor repellendus at asperiores doloremque ex temporibus nostrum
-          molestiae aliquid pariatur tenetur, nemo in suscipit sed facere rerum
-          ab, accusantium iure. Iste error necessitatibus voluptates
-          repellendus!
+          O Projeto Ampare trata-se de uma aplicação web elaborada em ambiente
+          acadêmico que objetiva a criação de uma plataforma de ajuda
+          humanitária, o AMPARE, com o intuito de conectar voluntários e ONGs
+          que necessitem de auxílio em atividades, causas e ações sociais
+          urgentes. A plataforma fornecerá o acesso intuitivo dos voluntários à
+          causas que necessitem de ajuda urgente, compartilhando informações e
+          conectando-os diretamente às ONGs.
         </p>
       </div>
-      <div class="col-lg-6 p-4">
+      <div class="col-lg-6 p-2r">
         <img
-          class="img-fluid"
-          src="http://source.unsplash.com/random/600x300"
+          class="img-fluid sobre-nos"
+          src="/assets/img/sobre-nos/voluntarios.jpg"
           alt=""
+          ;
         />
+        <figcaption class="figure-caption">
+          Foto de
+          <a
+            href="https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Joel Muniz</a
+          >
+          em
+          <a
+            href="https://unsplash.com/s/photos/volunteer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </figcaption>
       </div>
     </div>
+    <!--descrição e foto do projeto -->
 
-    <div class="row cards sobre-nos">
-      <div class="col-sm-4">
+    <!--linha com estatísticas -->
+    <div class="row cards align-items-center justify-content-center sobre-nos">
+      <div class="col-sm-1 sobreNosLogo">
+        <img src="/assets/img/sobre-nos/icon-heart.png" alt="" srcset="" />
+      </div>
+      <div class="col-sm-3">
         <div class="card sobre-nos">
           <div class="card-body">
-            <h5 class="card-title">Lorem.</h5>
-            <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+            <h5 class="card-title">13</h5>
+            <p class="card-text p-0">Projetos apoiados</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-1 sobreNosLogo">
+        <img src="/assets/img/sobre-nos/icon-handshake.png" alt="" srcset="" />
+      </div>
+      <div class="col-sm-3">
         <div class="card sobre-nos">
           <div class="card-body">
-            <h5 class="card-title">Lorem.</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              dolores.
-            </p>
+            <h5 class="card-title">253.</h5>
+            <p class="card-text p-0">Voluntários cadastrados</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-1 sobreNosLogo">
+        <img src="/assets/img/sobre-nos/icon-family.png" alt="" srcset="" />
+      </div>
+      <div class="col-sm-3">
         <div class="card sobre-nos">
           <div class="card-body">
-            <h5 class="card-title">Lorem.</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            <h5 class="card-title">450</h5>
+            <p class="card-text p-0">Famílias alcançadas</p>
           </div>
         </div>
       </div>
     </div>
+    <!--linha com estatísticas -->
 
-    <div id="carouselSobreNos" class="carousel slide" data-mdb-ride="carousel">
+    <!--carrossel com fotos-->
+    <div id="carouselSobreNos" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-mdb-target="#carouselSobreNos"
-          data-mdb-slide-to="0"
+          data-bs-target="#carouselSobreNos"
+          data-bs-slide-to="0"
           class="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
         <button
           type="button"
-          data-mdb-target="#carouselSobreNos"
-          data-mdb-slide-to="1"
+          data-bs-target="#carouselSobreNos"
+          data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-mdb-target="#carouselSobreNos"
-          data-mdb-slide-to="2"
+          data-bs-target="#carouselSobreNos"
+          data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+            src="/assets/img/sobre-nos/sobre-nos-1.jpg"
             class="d-block w-100"
-            alt="Wild Landscape"
+            alt="Imagem 1"
           />
+          <div class="carousel-caption d-none d-md-block">
+            <figcaption class="figure-caption">
+              Foto de
+              <a
+                href="https://unsplash.com/@larm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Larm Rmah</a
+              >
+              em
+              <a
+                href="https://unsplash.com/s/photos/volunteer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </div>
         </div>
         <div class="carousel-item">
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+            src="/assets/img/sobre-nos/sobre-nos-2.jpg"
             class="d-block w-100"
-            alt="Camera"
+            alt="Imagem 2"
           />
+          <div class="carousel-caption d-none d-md-block">
+            <figcaption class="figure-caption">
+              Foto de
+              <a
+                href="https://unsplash.com/es/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Joel Muniz</a
+              >
+              em
+              <a
+                href="https://unsplash.com/s/photos/volunteer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </div>
         </div>
         <div class="carousel-item">
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+            src="/assets/img/sobre-nos/sobre-nos-3.jpg"
             class="d-block w-100"
-            alt="Exotic Fruits"
+            alt="Imagem 2"
           />
+          <div class="carousel-caption d-none d-md-block">
+            <figcaption class="figure-caption">
+              Foto de
+              <a
+                href="https://unsplash.com/es/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Joel Muniz</a
+              >
+              em
+              <a
+                href="https://unsplash.com/s/photos/volunteer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </div>
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-mdb-target="#carouselSobreNos"
-        data-mdb-slide="prev"
+        data-bs-target="#carouselSobreNos"
+        data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -247,13 +310,15 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-mdb-target="#carouselSobreNos"
-        data-mdb-slide="next"
+        data-bs-target="#carouselSobreNos"
+        data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!--carrossel com fotos-->
+
     <!--conteúdo da página -->
 
     <!--rodapé responsivo -->
