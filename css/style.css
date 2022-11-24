@@ -1,12 +1,20 @@
-/* Cor primária: #FD9D0D
+/* Cores:
+Cor primária: #FD9D0D
 Cor secundária: #912AF7
 Outras cores utilizadas:
-#5800B0 #55C741 #B0741A */
+#5800B0 #55C741 #B0741A 
+*/
 
+/*estilos gerais*/
 * {
   font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
+body.container-lg {
+  padding: 0;
+}
+
+/*estilos das navbars*/
 #navHeader {
   color: white;
   background-color: #fd9d0d;
@@ -24,41 +32,30 @@ Outras cores utilizadas:
   background-color: #55c741;
   border-color: #55c741;
 }
+
 .nav-link {
   color: #fd9d0d;
   font-size: 120%;
   text-transform: uppercase;
 }
+
+/*estilo dos títulos e parágrafo*/
 h1.tituloComFundo {
   background-color: #912af7;
   color: white;
   padding: 15px;
 }
+
 h2 {
   color: #666;
   padding: 20px 20px 5px 20px;
 }
+
 p {
   padding: 5px 20px 20px 20px;
 }
-.row.cards.sobre-nos {
-  background-color: #912af7;
-  overflow: auto;
-}
-.card.sobre-nos {
-  background-color: #912af7;
-  color: white;
-  border: 0;
-  padding: 20px;
-  text-align: center;
-}
-div.container-fluid.carousel {
-  padding: 50px;
-}
 
-#carouselSobreNos {
-  padding: 75px;
-}
+/*estilo do rodapé*/
 footer {
   background-color: #fd9d0d;
 }
