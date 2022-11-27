@@ -1,20 +1,12 @@
-/* Cores:
-Cor primária: #FD9D0D
+/* Cor primária: #FD9D0D
 Cor secundária: #912AF7
 Outras cores utilizadas:
-#5800B0 #55C741 #B0741A 
-*/
+#5800B0 #55C741 #B0741A */
 
-/*estilos gerais*/
 * {
   font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
-body.container-lg {
-  padding: 0;
-}
-
-/*estilos das navbars*/
 #navHeader {
   color: white;
   background-color: #fd9d0d;
@@ -28,10 +20,21 @@ body.container-lg {
   border-color: #912af7;
 }
 
+.btn.btn-primary#sejaUmParceiro:hover {
+  background-color: #a650fd;
+  border-color: #a650fd;
+}
+
 .btn.btn-primary#sejaUmVoluntario {
   background-color: #55c741;
   border-color: #55c741;
 }
+
+.btn.btn-primary#sejaUmVoluntario:hover {
+  background-color: #92e783;
+  border-color: #92e783;
+}
+
 
 .nav-link {
   color: #fd9d0d;
@@ -39,7 +42,6 @@ body.container-lg {
   text-transform: uppercase;
 }
 
-/*estilo dos títulos e parágrafo*/
 h1.tituloComFundo {
   background-color: #912af7;
   color: white;
@@ -55,7 +57,27 @@ p {
   padding: 5px 20px 20px 20px;
 }
 
-/*estilo do rodapé*/
+.row.cards.sobre-nos {
+  background-color: #912af7;
+  overflow: auto;
+}
+
+.card.sobre-nos {
+  background-color: #912af7;
+  color: white;
+  border: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+div.container-fluid.carousel {
+  padding: 50px;
+}
+
+#carouselSobreNos {
+  padding: 75px;
+}
+
 footer {
   background-color: #fd9d0d;
 }
