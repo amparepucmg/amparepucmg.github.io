@@ -7,6 +7,10 @@ Outras cores utilizadas:
   font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
+html {
+  background-color: #f5f5fa;
+}
+
 #navHeader {
   color: white;
   background-color: #fd9d0d;
@@ -34,7 +38,6 @@ Outras cores utilizadas:
   background-color: #92e783;
   border-color: #92e783;
 }
-
 
 .nav-link {
   color: #fd9d0d;
@@ -95,4 +98,18 @@ div.copyright {
   footer {
     text-align: center;
   }
+}
+
+.bg-purple {
+  background-color: #912af7;
+}
+
+.btn-green {
+  background-color: #55c741;
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background-color: #55c741;
+  color: #ffffff;
 }
