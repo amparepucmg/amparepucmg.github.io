@@ -19,6 +19,10 @@ html {
   vertical-align: middle;
 }
 
+#ampare-menu {
+  font-size: 0.8rem;
+}
+
 .btn.btn-primary#sejaUmParceiro {
   background-color: #912af7;
   border-color: #912af7;
@@ -104,12 +108,14 @@ div.copyright {
   background-color: #912af7;
 }
 
-.btn-green {
+.btn-green,
+.btn-green:hover {
   background-color: #55c741;
   color: #ffffff;
 }
 
-.btn-green:hover {
-  background-color: #55c741;
+.btn-purple,
+.btn-purple:hover {
+  background-color: #912af7;
   color: #ffffff;
 }
