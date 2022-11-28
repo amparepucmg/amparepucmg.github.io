@@ -111,7 +111,7 @@
     <!--navbar do topo (header) com email, telefone e dois botões -->
 
     <!--navbar com logo e links de navegação -->
-    <nav class="navbar navbar-expand-md border-bottom">
+    <nav class="navbar navbar-expand-md border-bottom pt-3 pb-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
           <img src="/assets/img/logo.purple.svg" alt="Logo" height="60px" />
@@ -127,8 +127,8 @@
         >
           <b class="fas fa-bars">Menu</b>
         </button>
-        <div class="collapse navbar-collapse" id="ampare-menu">
-          <div class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse fw-semibold" id="ampare-menu">
+          <div class="navbar-nav ms-auto gap-4">
             <a class="nav-link" href="/index.html">Home</a>
             <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
             <a class="nav-link" href="/projetos-e-vagas.html"
@@ -142,24 +142,293 @@
     </nav>
     <!--navbar com logo e links de navegação -->
 
-    <div class="m-4 bg-purple p-4 rounded">
-      <h1 class="text-white">Projetos e Vagas</h1>
+    <div class="bg-purple p-4">
+      <h1 class="text-white fw-bold">Projetos e Vagas</h1>
+      <form>
+        <div class="mb-3 mt-3 d-flex">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white pl-4 pr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <input
+              type="text"
+              name="SearchText"
+              id=""
+              class="form-control p-3"
+              placeholder="Digite o que você procura"
+              aria-describedby="helpId"
+            />
+          </div>
+          <button type="button" class="btn btn-green ml-3 pl-5 pr-5">
+            Buscar
+          </button>
+        </div>
+      </form>
     </div>
 
-    <div class="p-4">
-      <!--conteúdo da página -->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure
-      omnis exercitationem nihil ea sint, quas excepturi fuga quam, quisquam
-      pariatur modi saepe corporis at? Nemo ipsum necessitatibus odit unde totam
-      quos a modi, ab aperiam saepe accusantium inventore enim doloremque
-      expedita rerum repellat veritatis temporibus reiciendis fugiat esse
-      aspernatur nulla quod voluptatem suscipit! Rerum, excepturi beatae ullam
-      commodi libero minus maiores cumque accusantium laborum placeat aspernatur
-      nobis labore error obcaecati ipsa nostrum vero repellendus voluptatibus.
-      Voluptatem neque eum illo saepe perferendis impedit. Tenetur accusamus
-      natus, vel, officiis illo soluta molestiae a ipsam minus enim sit
-      repellendus tempora, minima iste!
-      <!--conteúdo da página -->
+    <div class="p-4 d-grid gap-3">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/120"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="mb-0">Nome do Projeto/Ação</h5>
+              <div><small class="mb-4">Localização</small></div>
+              <p class="p-0 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ratione minus et consectetur?
+              </p>
+              <a href="#" class="btn text-decoration-underline float-end"
+                >Leia mais...</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 mb-5">
+        <button class="btn btn-green w-25 m-auto">Exibir mais</button>
+      </div>
     </div>
 
     <!--rodapé responsivo -->
@@ -257,7 +526,7 @@
           </div>
         </section>
       </div>
-
+      <div class="border-bottom border-white border-1"></div>
       <div class="copyright">
         <h5 style="font-family: Pacifico">Projeto Ampare</h5>
         © Copyright 2022

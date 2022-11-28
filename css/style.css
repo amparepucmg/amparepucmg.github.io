@@ -82,3 +82,13 @@ div.copyright {
 .bg-purple {
   background-color: #912af7;
 }
+
+.btn-green {
+  background-color: #55c741;
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background-color: #55c741;
+  color: #ffffff;
+}
