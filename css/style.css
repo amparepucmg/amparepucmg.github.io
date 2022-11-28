@@ -10,6 +10,10 @@ Outras cores utilizadas:
   font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
+html {
+  background-color: #f5f5fa;
+}
+
 body.container-lg {
   padding: 0;
 }
@@ -73,4 +77,8 @@ div.copyright {
   footer {
     text-align: center;
   }
+}
+
+.bg-purple {
+  background-color: #912af7;
 }
