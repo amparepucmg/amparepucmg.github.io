@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BRq">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
@@ -38,11 +39,208 @@
             <a class="nav-link" href="#" onclick="mostrarModal()">Login</a>
             <a href="/cadastro.html" role="button" class="btn btn-primary" id="sejaUmParceiro">Seja um parceiro</a>
             <a href="/cadastro.html" role="button" class="btn btn-primary" id="sejaUmVoluntario">Seja um voluntário</a>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Ampare - Página Inicial</title>
+  </head>
+
+  <body>
+    <header id="imageHeader">
+      <nav class="navbar navbar-expand-md" id="navMain">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand" href="/index.html">
+            <img src="./assets/img/logo-home.png" alt="Logo" height="60px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <b class="fas fa-bars">Menu</b>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto d-flex align-items-center">
+              <div class="mr-5 d-flex gap-3">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
+                <a class="nav-link" href="/projetos-e-vagas"
+                  >Projetos e Ações</a
+                >
+                <a class="nav-link" href="/faq.html">FAQ</a>
+                <a class="nav-link" href="/login.html">Login</a>
+              </div>
+              <ul class="nav navbar-nav gap-3">
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn btn-purple"
+                    onclick="javascript:location.href='cadastro-ong.html'"
+                  >
+                    Seja um parceiro
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn btn-orange"
+                    onclick="javascript:location.href='cadastro-voluntario.html'"
+                  >
+                    Quero ser um voluntário
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <h1>
+          Escolha a causa que mais se identifica e faça diferença na vida do
+          próximo! Junte-se a nós!
+        </h1>
+      </div>
+
+      <div class="container" id="pesquisaBox">
+        <div class="mb-3" id="tituloBox">
+          <h2>Busque Vagas</h2>
+        </div>
+        <div class="mb-3" id="inputNome">
+          <label for="selectCidade">
+            Localização
+            <select class="form-select mt-3" id="selectCidade">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </label>
+          <label for="selectCidade">
+            Categoria de interesse
+            <select class="form-select mt-3" id="selectInteresse">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </label>
+          <button class="btn"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="btnCadastroGrande">
+          <a
+            href="/cadastro-ong.html"
+            role="button"
+            class="btn btn-primary"
+            id="CadastroOngGrande"
+            >Quero ser Parceiro Ampare!</a
+          >
+          <a
+            href="/cadastro.html"
+            role="button"
+            class="btn btn-primary"
+            id="CadastroVoluntarioGrande"
+            >Quero ser voluntário!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionPedidosUrgentes">
+      <div class="container" id="cardPedidosUrgentes">
+        <h2 id="tituloPedidosUrgentes">Pedidos Urgentes</h2>
+        <p id="descPedidosUrgentes">
+          Esses projetos estão precisando da sua ajuda agora
+        </p>
+        <div class="cardContainer">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+>>>>>>> ecd55c13cc7df5e41136b1eff9bdc2dcd39cebc1
           </div>
         </div>
       </div>
     </nav>
 
+<<<<<<< HEAD
     <div class="header-content">
       <h1>
         Escolha a causa que mais se identifica e faça diferença na vida do
@@ -127,12 +325,66 @@
               the bulk of the card's content.
             </p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
+=======
+    <section class="sectionOngsParceiras">
+      <div class="container" id="cardOngsParceiras">
+        <h2 id="tituloOngsParceiras">ONGs parceiras</h2>
+        <p id="descOngsParceiras">
+          Confira algumas ONGs cadastradas em nossa plataforma
+        </p>
+        <div class="cardContainer">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/homeBackground.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+>>>>>>> ecd55c13cc7df5e41136b1eff9bdc2dcd39cebc1
           </div>
         </div>
       </div>
     </div>
   </section>
 
+<<<<<<< HEAD
   <section class="sectionOngsParceiras">
     <div class="container" id="cardOngsParceiras">
       <h2 id="tituloOngsParceiras">ONGs parceiras</h2>
@@ -149,6 +401,99 @@
               the bulk of the card's content.
             </p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
+=======
+    <footer>
+      <div class="container p-4">
+        <section class="mb-1">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-sm-4 col-4">
+              <img
+                src="./assets/img/logo-sem-nome-branca.png"
+                width="75px"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.instagram.com">
+                <img
+                  src="./assets/img/icons/icon-ig.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.facebook.com">
+                <img
+                  src="./assets/img/icons/icon-fb.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.whatsapp.com">
+                <img
+                  src="./assets/img/icons/icon-wp.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1 col-sm-2 col-2">
+              <a href="http://www.github.com">
+                <img
+                  src="./assets/img/icons/icon-gh.png"
+                  alt=""
+                  height="32px"
+                  width="32px"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="/index.html" class="text-white">Home</a>
+                </li>
+                <li>
+                  <a href="/cadastro-voluntario.html" class="text-white"
+                    >Seja um Voluntário</a
+                  >
+                </li>
+                <li>
+                  <a href="/cadastro-ong.html" class="text-white"
+                    >Cadastre sua ONG</a
+                  >
+                </li>
+                <li>
+                  <a href="/projetos-e-vagas" class="text-white"
+                    >Pedidos de ajuda</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="/faq.html" class="text-white"
+                    >Perguntas frequentes</a
+                  >
+                </li>
+                <li>
+                  <a href="/sobre-nos.html" class="text-white">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="" class="text-white">Termos de uso</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Política de privacidade</a>
+                </li>
+              </ul>
+            </div>
+>>>>>>> ecd55c13cc7df5e41136b1eff9bdc2dcd39cebc1
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -203,6 +548,7 @@
     </div>
   </div>
 
+<<<<<<< HEAD
   <footer>
     <div class="container p-4">
       <section class="mb-1">
@@ -285,3 +631,12 @@
 </body>
 
 </html>
+=======
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> ecd55c13cc7df5e41136b1eff9bdc2dcd39cebc1

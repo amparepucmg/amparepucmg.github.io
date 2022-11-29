@@ -7,12 +7,20 @@ Outras cores utilizadas:
   font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
+html {
+  background-color: #f5f5fa;
+}
+
 #navHeader {
   color: white;
   background-color: #fd9d0d;
   padding: 4px;
   border: 4px;
   vertical-align: middle;
+}
+
+#ampare-menu {
+  font-size: 0.8rem;
 }
 
 .btn.btn-primary#sejaUmParceiro {
@@ -34,7 +42,6 @@ Outras cores utilizadas:
   background-color: #92e783;
   border-color: #92e783;
 }
-
 
 .nav-link {
   color: #fd9d0d;
@@ -95,4 +102,44 @@ div.copyright {
   footer {
     text-align: center;
   }
+}
+
+.bg-purple {
+  background-color: #912af7;
+}
+
+.btn-green {
+  background-color: #55c741;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.btn-green:hover {
+  filter: brightness(1.2);
+  background-color: #55c741;
+  color: #ffffff;
+}
+
+.btn-purple {
+  background-color: #912af7;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.btn-purple:hover {
+  background-color: #912af7;
+  color: #ffffff;
+  filter: brightness(1.2);
+}
+
+.btn-orange {
+  background-color: #fd9d0d;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.btn-orange:hover {
+  background-color: #fd9d0d;
+  color: #ffffff;
+  filter: brightness(1.2);
 }

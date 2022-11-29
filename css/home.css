@@ -1,83 +1,80 @@
 @media (max-width: 376px) {
-    #imageHeader {
-        height: 120vh !important;
-    }
+  #imageHeader {
+    height: 120vh !important;
+  }
 
-    .btnCadastroGrande {
-        margin: 75px auto !important;
-    }
+  .btnCadastroGrande {
+    margin: 75px auto !important;
+  }
 
-    #cardPedidosUrgentes {
-        height: 190vh;
-    }
+  #cardPedidosUrgentes {
+    height: 190vh;
+  }
 
-    #cardOngsParceiras {
-        height: 190vh;
-    }
+  #cardOngsParceiras {
+    height: 190vh;
+  }
 }
 
 @media (max-width: 768px) {
-    footer {
-        text-align: center !important;
-    }
+  footer {
+    text-align: center !important;
+  }
 
-    #pesquisaBox {
-        height: 300px !important;
-    }
+  #pesquisaBox {
+    height: 300px !important;
+  }
 
-    #selectInteresse {
-        margin-left: 0px !important;
-    }
+  #selectInteresse {
+    margin-left: 0px !important;
+  }
 
-    #selectCidade {
-        margin-bottom: 20px !important;
-    }
+  #selectCidade {
+    margin-bottom: 20px !important;
+  }
 
-    #imageHeader {
-        height: 100vh;
-    }
+  #imageHeader {
+    height: 100vh;
+  }
 
-    .card {
-        width: auto !important;
-    }
+  .card {
+    width: auto !important;
+  }
 
-    .card:nth-child(n+2) {
-        margin-top: 20px;
-    }
+  .card:nth-child(n + 2) {
+    margin-top: 20px;
+  }
 
-    #cardPedidosUrgentes {
-        height: 140vh;
-    }
+  #cardPedidosUrgentes {
+    height: 140vh;
+  }
 
-    #cardOngsParceiras {
-        height: 140vh;
-    }
-
+  #cardOngsParceiras {
+    height: 140vh;
+  }
 }
 
 @media (min-width: 769px) {
+  .cardContainer {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    .cardContainer {
-        display: flex;
-        justify-content: space-around;
+  #cardPedidosUrgentes {
+    height: 20vh;
+  }
 
-    }
-
-    #cardPedidosUrgentes {
-        height: 20vh;
-    }
-
-    #cardOngsParceiras {
-        height: 20vh;
-    }
+  #cardOngsParceiras {
+    height: 20vh;
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .card {
-    width: 18rem;
+  width: 18rem;
 }
 
 .modal .btn.btn-primary {
@@ -91,181 +88,188 @@
 }
 
 #imageHeader {
-    width: 100%;
-    height: calc(100vh - 150px);
-    background: no-repeat center/cover url("../assets/img/homeBackground.jpg") rgba(34, 34, 34, 0.7);
-    background-size: cover;
-    background-blend-mode: multiply;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url("../assets/img/homeBackground.jpg")
+    rgba(34, 34, 34, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .nav-link {
-    color: white;
+  color: white;
+  font-weight: 600;
+  transition: 500ms;
+}
+
+.nav-link:hover {
+  color: white;
+  opacity: 0.6;
 }
 
 .btn.btn-primary#sejaUmVoluntario {
-    background-color: #FD9D0D;
-    border-color: #FD9D0D;
+  background-color: #fd9d0d;
+  border-color: #fd9d0d;
 }
 
 .btn.btn-primary#sejaUmVoluntario :hover {
-    background-color: #FFC163;
-    border-color: #FFC163;
+  background-color: #ffc163;
+  border-color: #ffc163;
 }
 
-
 .btn.btn-primary#sejaUmParceiro {
-    margin-right: 10px;
-    margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .header-content {
-    color: white;
-    max-width: 550px;
-    margin: 120px auto;
-    text-align: center;
+  color: white;
+  max-width: 550px;
+  margin: 120px auto;
+  text-align: center;
 }
 
 .header-content h1 {
-    margin-bottom: 10px;
-    font-weight: 800;
+  margin-bottom: 10px;
+  font-weight: 800;
 }
 
 #pesquisaBox {
-    background-color: #912af7;
-    border-radius: 10px;
-    height: 200px;
-    max-width: 1000px;
+  background-color: #912af7;
+  border-radius: 10px;
+  height: 200px;
+  max-width: 1000px;
 }
 
 #pesquisaBox #tituloBox h2 {
-    font-weight: 800 !important;
-    color: white !important;
+  font-weight: 800 !important;
+  color: white !important;
 }
 
 #inputNome {
-    color: white;
-    margin: 20px 20px
+  color: white;
+  margin: 20px 20px;
 }
 
 #selectCidade {
-    width: 220px;
-    margin-right: 20px
+  width: 220px;
+  margin-right: 20px;
 }
 
 #selectInteresse {
-    width: 220px;
-    margin-left: 20px
+  width: 220px;
+  margin-left: 20px;
 }
 
 #pesquisaBox .btn {
-    background-color: #FD9D0D;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 20px
+  background-color: #fd9d0d;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 /* Darker background on mouse-over */
 #pesquisaBox .btn:hover {
-    background-color: #FFC163;
+  background-color: #ffc163;
 }
 
 .btnCadastroGrande {
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-around;
-    height: 10vh;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
 }
 
 #CadastroOngGrande {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vh;
-    background-color: #912af7;
-    border-color: #912af7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vh;
+  background-color: #912af7;
+  border-color: #912af7;
 }
 
 #CadastroOngGrande:hover {
-    background-color: #a650fd;
-    border-color: #a650fd;
+  background-color: #a650fd;
+  border-color: #a650fd;
 }
 
 #CadastroVoluntarioGrande {
-    width: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fd9d0d;
-    border-color: #fd9d0d;
+  width: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fd9d0d;
+  border-color: #fd9d0d;
 }
 
 #CadastroVoluntarioGrande:hover {
-    background-color: #FFC163;
-    border-color: #FFC163;
+  background-color: #ffc163;
+  border-color: #ffc163;
 }
 
 .sectionPedidosUrgentes {
-    background-color: #fd9d0d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50vh;
+  background-color: #fd9d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50vh;
 }
 
 .sectionPedidosUrgentes #tituloPedidosUrgentes {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
 .sectionPedidosUrgentes #descPedidosUrgentes {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 14px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
 }
 
 #cardPedidosUrgentes {
-    margin-right: 0px;
-    margin-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .cardContainer .btn {
-    background-color: #FD9D0D;
-    border-color: #FD9D0D;
+  background-color: #fd9d0d;
+  border-color: #fd9d0d;
 }
 
 .cardContainer .btn:hover {
-    background-color: #FFC163;
-    border-color: #FFC163;
+  background-color: #ffc163;
+  border-color: #ffc163;
 }
 
 .sectionOngsParceiras {
-    background-color: #a650fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50vh;
+  background-color: #a650fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50vh;
 }
 
 .sectionOngsParceiras #tituloOngsParceiras {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
 .sectionOngsParceiras #descOngsParceiras {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 14px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
 }
 
 #cardOngsParceiras {
-    margin-right: 0px;
-    margin-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }

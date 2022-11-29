@@ -1,0 +1,42 @@
+h2 {
+  position: absolute;
+  width: 400px;
+  height: 39px;
+  left: 20px;
+  top: 250px;
+
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 39px;
+
+  text-align: left;
+
+  color: gray;
+}
+body {
+  position: absolute;
+  width: 700px;
+  height: 1000px;
+  left: 100px;
+  right: 100px;
+  top: 0px;
+
+  background: #ffffff;
+}
+
+h3,
+p1,
+p2,
+p3,
+form {
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  padding: 10px 10px 10px 60px;
+  margin: 10px;
+  color: grey;
+}
+
+option {
+  color: grey;
+}
