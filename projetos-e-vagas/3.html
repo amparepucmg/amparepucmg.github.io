@@ -24,13 +24,14 @@
       href="https://fonts.googleapis.com/css?family=Pacifico"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/pagina-projetos.css" />
+    <script src="db-projetos.js"></script>
 
-    <title>FAQ</title>
+    <title id="tituloPagina"></title>
   </head>
   <!--container-wrap para deixar conteúdo com largura máxima (lg)-->
-  <body class="container-lg p-0">
+  <body class="container-lg border border-0 p-0">
     <!--navbar do topo (header) com email, telefone e dois botões -->
     <nav class="navbar navbar-expand-md pt-3 pb-3" id="navHeader">
       <div class="container-fluid">
@@ -132,7 +133,9 @@
           <div class="navbar-nav ms-auto gap-4">
             <a class="nav-link" href="/index.html">Home</a>
             <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
-            <a class="nav-link" href="/projetos-e-vagas">Projetos e Ações</a>
+            <a class="nav-link" href="/projetos-e-vagas.html"
+              >Projetos e Ações</a
+            >
             <a class="nav-link" href="/faq.html">FAQ</a>
             <a class="nav-link" href="/login.html">Login</a>
           </div>
@@ -141,147 +144,31 @@
     </nav>
     <!--navbar com logo e links de navegação -->
 
-    <!--título com fundo roxo -->
-    <h1 class="tituloComFundo">Perguntas frequentes - FAQ</h1>
-    <!--título com fundo roxo -->
-
-    <!--conteúdo da página -->
-
-    <!--perguntas e respostas -->
-    <div class="accordion" id="accordionFaq">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            Como fazer trabalho voluntário?
-          </button>
-        </h2>
-        <div
-          id="collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="headingOne"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            nostrum accusantium ex beatae? Eaque, modi similique deleniti illo
-            praesentium quos dicta temporibus totam necessitatibus, aperiam
-            pariatur eum vero velit iste nobis itaque in cupiditate ullam
-            quibusdam rerum recusandae dignissimos molestias nesciunt magni.
-            Quae repudiandae culpa modi? Laborum saepe accusamus perspiciatis!
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 p-2">
+        <h2 id="nomeProjeto"></h2>
+        <p id="descricaoProjeto"></p>
+        <div class="col">
+          <h3>Contato</h3>
+          <h4>
+            <img src="/assets/img/icons/email.png" alt="" srcset="" />
+            <span id="emailProjeto"></span>
+          </h4>
+          <h4>
+            <img src="/assets/img/icons/tel.png" alt="" srcset="" />
+            <span id="telefoneProjeto"></span>
+          </h4>
+          <h4>
+            <img src="/assets/img/icons/site.png" alt="" srcset="" />
+            <span id="websiteProjeto"></span>
+          </h4>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Como encontro as oportunidades?
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi
-            nobis dolores optio architecto fugit animi corrupti impedit ut,
-            nostrum minus temporibus inventore ex? Maxime dolorem eveniet
-            maiores doloribus sit, provident laboriosam quaerat mollitia iusto
-            omnis cum dolore, saepe nesciunt magni aliquid reprehenderit
-            doloremque tempora rem fugiat adipisci, earum autem?
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Como vou ser contatado?
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dignissimos cumque error pariatur minima accusantium similique nobis
-            earum! Quas, impedit optio. Aliquam ad veritatis veniam quibusdam
-            maxime qui expedita et repellat reprehenderit unde reiciendis
-            dolores, distinctio tempore id sequi, voluptas atque. Maxime tenetur
-            ullam, tempora recusandae ipsa quaerat perspiciatis architecto
-            cupiditate molestias, sapiente iusto voluptates enim rem? Laudantium
-            sequi in non animi maxime quam commodi delectus tempora ea est
-            voluptatem dolore molestiae cupiditate dicta eos optio, magnam quis
-            temporibus deserunt dolor nostrum. Eos quos voluptatem commodi dicta
-            mollitia voluptatum eveniet, molestiae necessitatibus ipsum
-            temporibus expedita sint adipisci ad, nobis illum deleniti?
-          </div>
-        </div>
-      </div>
+      <div class="col-lg-6 p-3" id="imgProjeto"></div>
     </div>
-
-    <!--formulário de dúvidas-->
-    <div class="container" id="formularioDuvidas">
-      <h2>Envie sua pergunta</h2>
-      <form action="/post" method="post">
-        <div class="row">
-          <div class="col-sm">
-            <input
-              type="text"
-              class="form-control"
-              name="nome"
-              placeholder="Nome"
-            />
-          </div>
-          <div class="col-sm">
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="E-mail"
-            />
-          </div>
-        </div>
-        <textarea
-          class="form-control"
-          name="pergunta"
-          placeholder="Envie sua dúvida"
-          id="textoDuvida"
-        ></textarea>
-        <div class="col-md-12 bg-light text-right pr-0">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-    </div>
-
-    <!--conteúdo da página -->
 
     <!--rodapé responsivo -->
-    <footer>
+    <footer style="clear: both">
       <div class="container p-4">
         <section class="mb-1">
           <div class="row align-items-center">
@@ -338,17 +225,17 @@
                   <a href="/index.html" class="text-white">Home</a>
                 </li>
                 <li>
-                  <a href="/cadastro-voluntario.html" class="text-white"
+                  <a href="/cadastro.html" class="text-white"
                     >Seja um Voluntário</a
                   >
                 </li>
                 <li>
-                  <a href="/cadastro-ong.html" class="text-white"
+                  <a href="/cadastro.html" class="text-white"
                     >Cadastre sua ONG</a
                   >
                 </li>
                 <li>
-                  <a href="/projetos-e-vagas" class="text-white"
+                  <a href="/projetos-e-vagas.html" class="text-white"
                     >Pedidos de ajuda</a
                   >
                 </li>
@@ -388,5 +275,27 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script>
+      (i = 2), (i = db.dados[i].id - 1);
+      document.getElementById("nomeProjeto").innerHTML = `${db.dados[i].nome}`;
+      document.getElementById(
+        "tituloPagina"
+      ).innerHTML = `Projeto ${db.dados[i].id}`;
+      document.getElementById(
+        "descricaoProjeto"
+      ).innerHTML = `${db.dados[i].descricao}`;
+      document.getElementById(
+        "emailProjeto"
+      ).innerHTML = `${db.dados[i].email}`;
+      document.getElementById(
+        "telefoneProjeto"
+      ).innerHTML = `${db.dados[i].telefone}`;
+      document.getElementById(
+        "websiteProjeto"
+      ).innerHTML = `${db.dados[i].website}`;
+      document.getElementById(
+        "imgProjeto"
+      ).innerHTML = `<img class="img-fluid" src="./img/projeto (${db.dados[i].id}).jpg" alt="" /> `;
+    </script>
   </body>
 </html>
