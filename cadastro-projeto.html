@@ -25,12 +25,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/faq.css" />
 
-    <title>FAQ</title>
+    <title>Ampare - Cadastro de Projeto</title>
   </head>
   <!--container-wrap para deixar conteúdo com largura máxima (lg)-->
-  <body class="container-lg p-0">
+  <body class="container-lg border border-0 p-0">
     <!--navbar do topo (header) com email, telefone e dois botões -->
     <nav class="navbar navbar-expand-md pt-3 pb-3" id="navHeader">
       <div class="container-fluid">
@@ -89,8 +88,9 @@
               <li class="nav-item">
                 <button
                   type="button"
-                  class="btn btn-purple"
-                  onclick="javascript:location.href='/cadastro-ong.html'"
+                  class="btn btn-primary"
+                  id="sejaUmParceiro"
+                  onclick="javascript:location.href='cadastro-ong.html'"
                 >
                   Seja um parceiro
                 </button>
@@ -98,8 +98,9 @@
               <li class="nav-item">
                 <button
                   type="button"
-                  class="btn btn-green"
-                  onclick="javascript:location.href='/cadastro-voluntario.html'"
+                  class="btn btn-primary"
+                  id="sejaUmVoluntario"
+                  onclick="javascript:location.href='cadastro-voluntario.html'"
                 >
                   Quero ser um voluntário
                 </button>
@@ -132,153 +133,78 @@
           <div class="navbar-nav ms-auto gap-4">
             <a class="nav-link" href="/index.html">Home</a>
             <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
-            <a class="nav-link" href="/projetos-e-vagas">Projetos e Ações</a>
-            <a class="nav-link" href="/faq.html">FAQ</a>
-            <a class="nav-link" href="/login.html">Login</a>
+            <a class="nav-link" href="/projetos-e-vagas.html"
+              >Projetos e Ações</a
+            >
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="login.html">Login</a>
           </div>
         </div>
       </div>
     </nav>
     <!--navbar com logo e links de navegação -->
 
-    <!--título com fundo roxo -->
-    <h1 class="tituloComFundo">Perguntas frequentes - FAQ</h1>
-    <!--título com fundo roxo -->
-
-    <!--conteúdo da página -->
-
-    <!--perguntas e respostas -->
-    <div class="accordion" id="accordionFaq">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            Como fazer trabalho voluntário?
-          </button>
-        </h2>
-        <div
-          id="collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="headingOne"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            nostrum accusantium ex beatae? Eaque, modi similique deleniti illo
-            praesentium quos dicta temporibus totam necessitatibus, aperiam
-            pariatur eum vero velit iste nobis itaque in cupiditate ullam
-            quibusdam rerum recusandae dignissimos molestias nesciunt magni.
-            Quae repudiandae culpa modi? Laborum saepe accusamus perspiciatis!
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Como encontro as oportunidades?
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi
-            nobis dolores optio architecto fugit animi corrupti impedit ut,
-            nostrum minus temporibus inventore ex? Maxime dolorem eveniet
-            maiores doloribus sit, provident laboriosam quaerat mollitia iusto
-            omnis cum dolore, saepe nesciunt magni aliquid reprehenderit
-            doloremque tempora rem fugiat adipisci, earum autem?
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Como vou ser contatado?
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="accordionFaq"
-        >
-          <div class="accordion-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dignissimos cumque error pariatur minima accusantium similique nobis
-            earum! Quas, impedit optio. Aliquam ad veritatis veniam quibusdam
-            maxime qui expedita et repellat reprehenderit unde reiciendis
-            dolores, distinctio tempore id sequi, voluptas atque. Maxime tenetur
-            ullam, tempora recusandae ipsa quaerat perspiciatis architecto
-            cupiditate molestias, sapiente iusto voluptates enim rem? Laudantium
-            sequi in non animi maxime quam commodi delectus tempora ea est
-            voluptatem dolore molestiae cupiditate dicta eos optio, magnam quis
-            temporibus deserunt dolor nostrum. Eos quos voluptatem commodi dicta
-            mollitia voluptatum eveniet, molestiae necessitatibus ipsum
-            temporibus expedita sint adipisci ad, nobis illum deleniti?
-          </div>
-        </div>
-      </div>
+    <div class="bg-purple p-4">
+      <h1 class="text-white fw-bold m-0">Cadastro de Projeto</h1>
     </div>
 
-    <!--formulário de dúvidas-->
-    <div class="container" id="formularioDuvidas">
-      <h2>Envie sua pergunta</h2>
-      <form action="/post" method="post">
-        <div class="row">
-          <div class="col-sm">
-            <input
-              type="text"
-              class="form-control"
-              name="nome"
-              placeholder="Nome"
-            />
+    <div class="p-4 d-grid gap-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Título do Projeto</label>
+                <input
+                  type="text"
+                  name=""
+                  id="tituloProjeto"
+                  class="form-control"
+                  placeholder="Título do Projeto"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Logo</label>
+                <input type="file" name="" id="" class="form-control" />
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="E-mail"
-            />
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1"
+                  >Descrição do Projeto</label
+                >
+                <textarea
+                  class="form-control"
+                  id="descricaoProjeto"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
           </div>
-        </div>
-        <textarea
-          class="form-control"
-          name="pergunta"
-          placeholder="Envie sua dúvida"
-          id="textoDuvida"
-        ></textarea>
-        <div class="col-md-12 bg-light text-right pr-0">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-    </div>
+          <div class="row">
+            <div class="col-3">
+              <label for="" class="form-label">Meta</label>
+              <input
+                type="number"
+                name=""
+                id="metaProjeto"
+                class="form-control"
+                placeholder="Meta a ser atingida"
+              />
+            </div>
+          </div>
+          <hr class="text-dark" />
 
-    <!--conteúdo da página -->
+
+    <div class="container-fluid">
+      <div class="row m-2 mb-5 justify-content-end">
+        <button class="btn btn-purple w-auto">Salvar</button>
+      </div>
+    </div>
 
     <!--rodapé responsivo -->
     <footer>
@@ -348,7 +274,7 @@
                   >
                 </li>
                 <li>
-                  <a href="/projetos-e-vagas" class="text-white"
+                  <a href="/projetos-e-vagas.html" class="text-white"
                     >Pedidos de ajuda</a
                   >
                 </li>
