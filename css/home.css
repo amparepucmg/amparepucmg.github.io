@@ -80,6 +80,16 @@
     width: 18rem;
 }
 
+.modal .btn.btn-primary {
+    background-color: #FD9D0D;
+    border-color: #FD9D0D;
+}
+
+.modal .btn.btn-primary :hover {
+    background-color: #FFC163;
+    border-color: #FFC163;
+}
+
 #imageHeader {
     width: 100%;
     height: calc(100vh - 150px);
