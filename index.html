@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BRq">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,151 +36,74 @@
             <a class="nav-link" href="faq.html">FAQ</a>
             <a class="nav-link" href="#" onclick="mostrarModal()">Login</a>
 
-              <ul class="nav navbar-nav gap-3">
-                <li class="nav-item">
-                  <button
-                    type="button"
-                    class="btn btn-purple"
-                    onclick="javascript:location.href='/cadastro-ong.html'"
-                  >
-                    Seja um parceiro
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button
-                    type="button"
-                    class="btn btn-orange"
-                    onclick="javascript:location.href='/cadastro-voluntario.html'"
-                  >
-                    Quero ser um voluntário
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <ul class="nav navbar-nav gap-3">
+              <li class="nav-item">
+                <button type="button" class="btn btn-purple" onclick="javascript:location.href='/cadastro-ong.html'">
+                  Seja um parceiro
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-orange"
+                  onclick="javascript:location.href='/cadastro-voluntario.html'">
+                  Quero ser um voluntário
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-
-      <div class="header-content">
-        <h1>
-          Escolha a causa que mais se identifica e faça diferença na vida do
-          próximo! Junte-se a nós!
-        </h1>
       </div>
-    </header>
+    </nav>
 
-      <div class="container" id="pesquisaBox">
-        <div class="mb-3" id="tituloBox">
-          <h2>Busque Vagas</h2>
-        </div>
-        <div class="mb-3" id="inputNome">
-          <label for="selectCidade">
-            Localização
-            <select class="form-select mt-3" id="selectCidade">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </label>
-          <label for="selectCidade">
-            Categoria de interesse
-            <select class="form-select mt-3" id="selectInteresse">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </label>
-          <button class="btn"><i class="fa fa-search"></i></button>
-        </div>
-      </div>
+    <div class="header-content">
+      <h1>
+        Escolha a causa que mais se identifica e faça diferença na vida do
+        próximo! Junte-se a nós!
+      </h1>
 
-    <section>
-      <div class="container">
-        <div class="btnCadastroGrande">
-          <a
-            href="/cadastro-ong.html"
-            role="button"
-            class="btn btn-primary"
-            id="CadastroOngGrande"
-            >Quero ser Parceiro Ampare!</a
-          >
-          <a
-            href="/cadastro.html"
-            role="button"
-            class="btn btn-primary"
-            id="CadastroVoluntarioGrande"
-            >Quero ser voluntário!</a
-          >
-        </div>
+    </div>
+    <div class="container" id="pesquisaBox">
+      <div class="mb-3" id="tituloBox">
+        <h2>Busque Vagas</h2>
       </div>
-    </section>
-    
-    <section class="sectionPedidosUrgentes">
-      <div class="container" id="cardPedidosUrgentes">
-        <h2 id="tituloPedidosUrgentes">Pedidos Urgentes</h2>
-        <p id="descPedidosUrgentes">
-          Esses projetos estão precisando da sua ajuda agora
-        </p>
-        <div class="cardContainer">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+      <div class="mb-3" id="inputNome">
+        <label for="selectCidade">
+          Localização
+          <select class="form-select mt-3" id="selectCidade">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </label>
+        <label for="selectCidade">
+          Categoria de interesse
+          <select class="form-select mt-3" id="selectInteresse">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </label>
+        <button class="btn"><i class="fa fa-search"></i></button>
       </div>
     </div>
+  </header>
+
+
 
   <section>
     <div class="container">
       <div class="btnCadastroGrande">
-        <a href="/cadastro.html" role="button" class="btn btn-primary" id="CadastroOngGrande">Quero ser Parceiro
+        <a href="/cadastro-ong.html" role="button" class="btn btn-primary" id="CadastroOngGrande">Quero ser Parceiro
           Ampare!</a>
         <a href="/cadastro.html" role="button" class="btn btn-primary" id="CadastroVoluntarioGrande">Quero ser
           voluntário!</a>
       </div>
     </div>
   </section>
+
+
+
 
   <section class="sectionPedidosUrgentes">
     <div class="container" id="cardPedidosUrgentes">
@@ -231,41 +155,13 @@
       <p id="descOngsParceiras">
         Confira algumas ONGs cadastradas em nossa plataforma
       </p>
-      <div class="cardContainer">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+      <!--Card da ONG-->
+      <div id="lista-ongs" class="cardContainer">
+        <!--Lista de ONGs baseada no Local Storage. Será preenchida via JS-->
+        <h6 class="text-white">Não existem ONGs cadastradas</h6>
       </div>
+      <!--Fim do card da ONG-->
+
     </div>
   </section>
 
@@ -294,6 +190,10 @@
       </div>
     </div>
   </div>
+
+
+
+
 
   <footer>
     <div class="container p-4">
@@ -368,11 +268,96 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script>
+
     function mostrarModal() {
       let divModal = document.getElementById('exampleModal');
       let Modal = new bootstrap.Modal(divModal);
       Modal.show();
     }
   </script>
+
+  <script>
+    //Pega o elemento da DOM com id #lista-ongs onde a lista de ONGs será injetada.
+    const ongsListElement = document.getElementById("lista-ongs");
+
+    //pega o valor armazenado no session storage e coloca na variável ongsSessionStorage//
+    const ongsSessionStorage = sessionStorage.getItem("ongs");
+    console.log("SESSION STORAGE", ongsSessionStorage);
+
+    //Verifica se existe algo salvo no local storage para prosseguir//
+    if (ongsSessionStorage) {
+      //Como o session storage só armazena strings, precisamos convertê-las em objeto após a recuperação//
+      const ongsParsed = JSON.parse(ongsSessionStorage);
+
+      //Inicializando a variável string que irá conter todo o HTML que será injetado na DOM.//
+      //Como a variável será alterada (incrementada/concatenada) posteriormente, inicializamos essa variável como let e não const.
+      let ongHtml = "";
+
+      //Interação/loop em todos os registros do local storage.//
+      for (let index = 0; index < ongsParsed.length; index++) {
+
+        const ong = ongsParsed[index];
+
+        console.log(ong);
+
+        //Para cada registro no array de ongs 'ongsParsed' será atribuído na variável ong o registro da vez do loop.//
+
+        //Concatena na variável ongHtml o HTML para escrever o card do registro da ong desta interação.//
+
+        //Está sendo utilizada a interpolação a seguir para escrever os dados da ong contidos na variável 'ong'//
+        ongHtml += `
+              <div class= "cardContainer">
+                <div clas= "card" style= "width: 18rem">
+                  <img 
+                    class= "card-img-top"
+                    src= "./assets/img/homeBackground.jpg"
+                    alt= "Card image cap"
+                  />
+                  <div class= "card-body"
+                    <h5 class= "card-title">${ong.nome}</h5>
+                    <h6>${ong.cidade} - ${ong.estado}</h6>
+                    <p class= "card-text">
+                      ${ong.descricao}
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#ong-${index}">
+                      Ver detalhes da ONG
+                    </button> 
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="ong-${index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">${ong.nome}</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <p>${ong.cidade} - ${ong.estado}</p>
+                      </div>
+                      <div>
+                         ${ong.descricao}
+                      </div>
+                     
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button type="button" class="btn btn-green">Ajudar esta ONG</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+
+      }
+      //Injetando o resultado HTML gerado na div da DOM que foi recuperada acima, na variável ongsListElement.//
+      ongsListElement.innerHTML = ongHtml;
+    }
+  </script>
 </body>
+
 </html>
