@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/db-projetos.js"></script>
+
   <title>Ampare - Página Inicial</title>
 </head>
 
@@ -91,18 +93,15 @@
 
 
 
-  <section>
-    <div class="container">
-      <div class="btnCadastroGrande">
-        <a href="/cadastro-ong.html" role="button" class="btn btn-primary" id="CadastroOngGrande">Quero ser Parceiro
-          Ampare!</a>
-        <a href="/cadastro-voluntario.html" role="button" class="btn btn-primary" id="CadastroVoluntarioGrande">Quero
-          ser
-          voluntário!</a>
-      </div>
+  <div class="container">
+    <div class="btnCadastroGrande">
+      <a href="/cadastro-ong.html" role="button" class="btn btn-primary" id="CadastroOngGrande">Quero ser Parceiro
+        Ampare!</a>
+      <a href="/cadastro-voluntario.html" role="button" class="btn btn-primary" id="CadastroVoluntarioGrande">Quero
+        ser
+        voluntário!</a>
     </div>
-  </section>
-
+  </div>
 
 
 
@@ -112,41 +111,11 @@
       <p id="descPedidosUrgentes">
         Esses projetos estão precisando da sua ajuda agora
       </p>
-      <div class="cardContainer">
-        <div class="card">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="./assets/img/homeBackground.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+      <!--Lista de projetos baseada no Local Storage. Será preenchida via JS-->
+      <div class="cardContainer" id="projetosUrgentes">
+
       </div>
+    </div>
     </div>
   </section>
 
@@ -191,9 +160,6 @@
       </div>
     </div>
   </div>
-
-
-
 
 
   <footer>
@@ -358,6 +324,30 @@
       //Injetando o resultado HTML gerado na div da DOM que foi recuperada acima, na variável ongsListElement.//
       ongsListElement.innerHTML = ongHtml;
     }
+  </script>
+
+  <script>
+    //script para exibir os pedidos urgentes a partir da base de dados
+    var projetosUrgentes = "";
+
+    for (i = 0; i < 3; i++) {
+      projetosUrgentes += `
+          <div class="card">
+            <img class="card-img-top" 
+
+            src="/projetos-e-vagas/img/projeto (${db.dados[i].id}).jpg"  "/>
+            <div class="card-body">
+              <h5 class="card-title">${db.dados[i].nome}</h5>
+              <p class="card-text">
+                 ${db.dados[i].resumo}
+              </p>
+              <a href="/projetos-e-vagas//${db.dados[i].id}.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+`;
+    }
+    document.getElementById("projetosUrgentes").innerHTML = projetosUrgentes;
+
   </script>
 </body>
 
