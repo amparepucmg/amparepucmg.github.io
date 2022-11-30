@@ -2,7 +2,7 @@
 
 //ao alterar algo aqui, os arquivos são atualizados automaticamente
 
-var db = {
+var db_projetos_inicial = {
   dados: [
     {
       id: 1,
@@ -102,3 +102,68 @@ var db = {
     },
   ],
 };
+
+// Caso os dados já estejam no Session Storage, caso contrário, carrega os dados iniciais
+var db = JSON.parse(sessionStorage.getItem("db_contato"));
+if (!db) {
+  db = db_projetos_inicial;
+}
+
+function displayMessage(msg) {
+  $("#msg").html('<div class="alert alert-warning">' + msg + "</div>");
+}
+
+function insertProjeto(projeto) {
+  // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
+  let novoId = 1;
+  if (db.dados.length != 0) novoId = db.dados[db.dados.length - 1].id + 1;
+  let novoProjeto = {
+    id: novoId,
+    nome: projeto.nome,
+    cidade: projeto.cidade,
+    resumo: projeto.resumo,
+    descricao: projeto.descricao,
+    imagem: projeto.imagem,
+    email: projeto.email,
+    telefone: projeto.telefone,
+    website: projeto.website,
+  };
+
+  // Insere o novo objeto no array
+  db.dados.push(novoProjeto);
+  displayMessage("Projeto inserido com sucesso");
+
+  // Atualiza os dados no Session Storage
+  sessionStorage.setItem("db_projeto", JSON.stringify(db));
+}
+
+function updateProjeto(id, projeto) {
+  // Localiza o indice do objeto a ser alterado no array a partir do seu ID
+  let index = db.dados.map((obj) => obj.id).indexOf(id);
+
+  // Altera os dados do objeto no array
+  (db.dados[index].nome = contato.nome),
+    (db.dados[index].cidade = contato.cidade),
+    (db.dados[index].resumo = contato.resumo),
+    (db.dados[index].descricao = contato.descricao),
+    (db.dados[index].imagem = contato.imagem),
+    (db.dados[index].email = contato.email),
+    (db.dados[index].telefone = contato.telefone),
+    (db.dados[index].website = contato.website),
+    displayMessage("Projeto alterado com sucesso");
+
+  // Atualiza os dados no Session Storage
+  sessionStorage.setItem("db_projeto", JSON.stringify(db));
+}
+
+function deleteProjeto(id) {
+  // Filtra o array removendo o elemento com o id passado
+  db.dados = db.dados.filter(function (element) {
+    return element.id != id;
+  });
+
+  displayMessage("Projeto removido com sucesso");
+
+  // Atualiza os dados no Session Storage
+  sessionStorage.setItem("db_projeto", JSON.stringify(db));
+}
