@@ -75,16 +75,23 @@
 
 .card {
   width: 18rem;
+  height: 18rem;
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .modal .btn.btn-primary {
-    background-color: #FD9D0D;
-    border-color: #FD9D0D;
+  background-color: #fd9d0d;
+  border-color: #fd9d0d;
 }
 
 .modal .btn.btn-primary :hover {
-    background-color: #FFC163;
-    border-color: #FFC163;
+  background-color: #ffc163;
+  border-color: #ffc163;
 }
 
 #imageHeader {
