@@ -143,3 +143,11 @@ div.copyright {
   color: #ffffff;
   filter: brightness(1.2);
 }
+
+.btn-custom {
+  padding: 3px 15px 4px;
+  background-color: #6C757D;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
