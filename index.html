@@ -205,53 +205,12 @@
         <p id="descOngsParceiras">
           Confira algumas ONGs cadastradas em nossa plataforma
         </p>
-        <div class="cardContainer">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./assets/img/homeBackground.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        <!-- Card da ONG -->
+        <div id="lista-ongs" class="cardContainer">
+          <!-- Lista de ONGS baseada no Local Storage. Será preenchido via JS. -->
+          <h6>Não existem ONGs cadastradas.</h6>
         </div>
+        <!-- Fim Card da ONG -->
       </div>
     </section>
 
@@ -361,5 +320,51 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Pega o elemento da DOM com id #lista-ongs onde a lista de ONGS será injetada.
+      const ongsListElement = document.getElementById("lista-ongs");
+
+      // Pega o valor armazenado no session storage e coloca na variável ongsSessionStorage.
+      const ongsSessionStorage = sessionStorage.getItem("ongs");
+
+      // Verifica se existe algo salvo no local storage para prosseguir
+      if (ongsSessionStorage) {
+        // Como o session storage só armazena strings, temos que converter em objeto após a recuperação.
+        const ongsParsed = JSON.parse(ongsSessionStorage);
+
+        // Incializando a variável string que irá conter todo o HTML que será injetado na DOM.
+        // Como a variável será alterada (incrementada/concatenada) posteriormente, inicializamos ela como let e não const.
+        let ongHtml = "";
+
+        // Interação/loop em todos os registros do local storage.
+        for (const ong of ongsParsed) {
+          // Para cada registro no array de ongs 'ongsParsed' será atribuído na variável 'ong' o registro da vez do loop.
+
+          // Concatena na variável ongHtml o HTML para escrever o card do registro da ONG desta interação do loop.
+          // Estamos utilizando interpolação a seguir para escrever os dados da ong contidos na variável 'ong'.
+          ongHtml += `
+          <div class="cardContainer">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./assets/img/homeBackground.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">${ong.nome}</h5>
+                <p class="card-text">
+                  ${ong.descricao}
+                </p>
+                <a href="#" class="btn btn-primary float-right">Ver detalhes da ONG</a>
+              </div>
+            </div>
+          </div>
+        `;
+        }
+
+        // Injetando o resultado do HTML gerado na div da DOM que foi recuperada acima na variável ongsListElement.
+        ongsListElement.innerHTML = ongHtml;
+      }
+    </script>
   </body>
 </html>
